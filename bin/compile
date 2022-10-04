@@ -107,6 +107,8 @@ else
   status "Custom nginx config found"
 fi
 
+apt-get install libssl1.0.0 -y
+
 cd $build_dir
 
 if [ "$REBUILD_ALL" == "true" ] || [ "$REBUILD_NODE_PACKAGES" == "true" ]; then
